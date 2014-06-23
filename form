@@ -1,0 +1,10 @@
+<?php
+include_once('functions.php');
+echo '<form method="POST">';
+echo '<input type="text" name="name" placeholder="Ваше имя" required><br>';
+echo '<input type="email" name="email" placeholder="Ваш e-mail" required><br>';
+echo '<textarea name="text" placeholder="Введите текст сообщения" required></textarea><br>';
+echo  $genCaptcha;
+echo '<input type="text" name="captcha" required>';
+echo '<input type="submit" value="Отправить">';
+echo '</form>';
